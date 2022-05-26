@@ -15,6 +15,7 @@ class LoadingPage extends StatefulWidget {
 }
 
 class _LoadingPageState extends State<LoadingPage> {
+  
   void getLocationData() async {
     try {
       var weatherInfo = await WeatherApi().fetchWeatherForecast();
