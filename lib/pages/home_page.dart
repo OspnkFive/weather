@@ -8,6 +8,7 @@ import 'package:weather_project/pages/search_page.dart';
 import 'package:weather_project/widgets/bottom_list_view.dart';
 import 'package:weather_project/widgets/city_view.dart';
 
+import '../constants/sizes.dart';
 import '../models/weather_forecast_daily.dart';
 
 class HomePage extends StatefulWidget {
@@ -62,7 +63,7 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Text(
               'Weather app',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: FontSize.kSmall),
             ),
             actions: [
               IconButton(
@@ -106,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                         child: Text(
                       'City not found\n Please enter correct city',
                       style:
-                          TextStyle(fontSize: 25, color: ColorsConstants.white),
+                          TextStyle(fontSize: FontSize.kLarge, color: ColorsConstants.white),
                       textAlign: TextAlign.center,
                     ));
                   }

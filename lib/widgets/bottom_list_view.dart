@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather_project/constants/colors.dart';
 import 'package:weather_project/widgets/card_forecast.dart';
 
+import '../constants/sizes.dart';
 import '../models/weather_forecast_daily.dart';
 
 class ButtomListView extends StatelessWidget {
@@ -22,7 +23,7 @@ class ButtomListView extends StatelessWidget {
           Text(
             '16 - days weather forecast'.toUpperCase(),
             style: const TextStyle(
-              fontSize: 20,
+              fontSize: FontSize.kMedium,
               fontWeight: FontWeight.bold,
               color: ColorsConstants.white,
             ),

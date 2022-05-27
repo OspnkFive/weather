@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_project/constants/colors.dart';
+import 'package:weather_project/constants/sizes.dart';
 
 import '../utils/forecast.dart';
 
@@ -16,7 +17,7 @@ Widget forecastCard(AsyncSnapshot snapshot, int index) {
     children: [
       Text(
         '$tempMin °C',
-        style: const TextStyle(color: ColorsConstants.white, fontSize: 20),
+        style: const TextStyle(color: ColorsConstants.white, fontSize: FontSize.kMedium),
       ),
       Image(
         image: AssetImage(
@@ -28,7 +29,7 @@ Widget forecastCard(AsyncSnapshot snapshot, int index) {
       ),
       Text(
         dayOfWeek,
-        style: const TextStyle(color: ColorsConstants.white, fontSize: 20),
+        style: const TextStyle(color: ColorsConstants.white, fontSize: FontSize.kMedium),
       )
     ],
   );

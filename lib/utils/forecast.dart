@@ -2,7 +2,7 @@ import 'package:intl/intl.dart';
 
 class Util {
   static String getFormattedDate(DateTime dateTime) {
-    return DateFormat('EEE, MMM d').format(dateTime); //Tue, May 5, 2022
+    return DateFormat('EEE, MMM d').format(dateTime);
   }
 
   static String findIcon(String name, bool type) {

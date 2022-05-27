@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:weather_project/constants/colors.dart';
 
+import '../constants/sizes.dart';
+
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
 
@@ -36,13 +38,13 @@ class _SearchPageState extends State<SearchPage> {
                   decoration: InputDecoration(
                       hintText: 'Search for a city',
                       hintStyle: const TextStyle(
-                        color: ColorsConstants.white,
-                      ),
+                          color: ColorsConstants.kMainViolet,
+                          fontSize: FontSize.kMedium,
+                          fontWeight: FontWeight.w500),
                       border:
                           const OutlineInputBorder(borderSide: BorderSide.none),
                       filled: true,
-                      fillColor:
-                          ColorsConstants.whiteWithOpacity.withOpacity(0.5)),
+                      fillColor: ColorsConstants.white.withOpacity(0.5)),
                   onChanged: (value) => cityName = value,
                 ),
               ),
@@ -54,7 +56,7 @@ class _SearchPageState extends State<SearchPage> {
                     child: const Text(
                       'Search',
                       style: TextStyle(
-                        fontSize: 25,
+                        fontSize: FontSize.kLarge,
                         fontWeight: FontWeight.w500,
                       ),
                     ),

@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:weather_project/constants/colors.dart';
 import 'package:weather_project/models/weather_forecast_daily.dart';
+
+import '../constants/sizes.dart';
 
 class ExtraData extends StatelessWidget {
   final AsyncSnapshot<WeatherForecast> snapshot;
@@ -28,12 +29,12 @@ class ExtraData extends StatelessWidget {
             const SizedBox(height: 10),
             Text(
               wind.toString() + " Km/h",
-              style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              style: const TextStyle(fontWeight: FontWeight.w700, fontSize: FontSize.kXSmall),
             ),
             const SizedBox(height: 10),
             const Text(
               "Wind",
-              style: TextStyle(color: Colors.black54, fontSize: 16),
+              style: TextStyle(color: ColorsConstants.kTextColor, fontSize: FontSize.kXSmall),
             )
           ],
         ),
@@ -43,12 +44,12 @@ class ExtraData extends StatelessWidget {
             const SizedBox(height: 10),
             Text(
               humidity.toString() + " %",
-              style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              style: const TextStyle(fontWeight: FontWeight.w700, fontSize: FontSize.kXSmall),
             ),
             const SizedBox(height: 10),
             const Text(
               "Humidity",
-              style: TextStyle(color: Colors.black54, fontSize: 16),
+              style: TextStyle(color: ColorsConstants.kTextColor, fontSize: FontSize.kXSmall),
             )
           ],
         ),
@@ -58,12 +59,12 @@ class ExtraData extends StatelessWidget {
             const SizedBox(height: 10),
             Text(
               rain.toString() + " %",
-              style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              style: const TextStyle(fontWeight: FontWeight.w700, fontSize: FontSize.kXSmall),
             ),
             const SizedBox(height: 10),
             const Text(
               "Rain",
-              style: TextStyle(color: Colors.black54, fontSize: 16),
+              style: TextStyle(color: ColorsConstants.kTextColor, fontSize:FontSize.kXSmall),
             )
           ],
         )

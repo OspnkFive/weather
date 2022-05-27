@@ -6,6 +6,8 @@ import 'package:weather_project/utils/forecast.dart';
 
 import 'package:weather_project/widgets/temperature_view.dart';
 
+import '../constants/sizes.dart';
+
 class CurrentWeather extends StatelessWidget {
   final AsyncSnapshot<WeatherForecast> snapshot;
 
@@ -40,7 +42,7 @@ class CurrentWeather extends StatelessWidget {
             style: const TextStyle(
               height: 0.1,
               fontWeight: FontWeight.bold,
-              fontSize: 25,
+              fontSize: FontSize.kLarge,
             ),
           ),
           Divider(),
@@ -67,17 +69,17 @@ class CurrentWeather extends StatelessWidget {
                           '$temp °C',
                           style: const TextStyle(
                             height: 0.1,
-                            fontSize: 32,
+                            fontSize: FontSize.kExtraLarge,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         Text(
                           '${forecastList[0].weather![0].description}',
-                          style: const TextStyle(fontSize: 25),
+                          style: const TextStyle(fontSize: FontSize.kLarge),
                         ),
                         Text(
                           Util.getFormattedDate(formattedDate),
-                          style: const TextStyle(fontSize: 18),
+                          style: const TextStyle(fontSize: FontSize.kSmall),
                         ),
                       ],
                     ),
